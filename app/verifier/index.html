@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: auto;
+            padding: 0;
+            max-width: 400px;
+        }
+
+        .inner {
+            width: 100%;
+            border: 1px solid black;
+            padding: 10px;
+            word-wrap: break-word;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 10px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="module" src="/main.js"></script>
+    <h1>Verifier Interface</h1>
+    <p>Verify the veracity of knowing a suduko solution without knowing the solution itself!</p>
+    <div class="buttons">
+        <input id="guessInput" type="file" placeholder="submit proof">
+        <button id="submitGuess">Verify Proof</button>
+    </div>
+    <div id="logs" class="inner">
+        <h2>Logs</h2>
+    </div>
+</body>
+
+</html>
